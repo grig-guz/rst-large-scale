@@ -32,7 +32,7 @@ To make sure that everything is ok so far, run the testing script:
 ### Training
 Specify the name for which to save your model under, and run as follows:
  ```
-python main.py --train --model_name YOUR_MODEL_NAME --dataset-type TYPE --epoch_start 1
+python main.py --train --model_name YOUR_MODEL_NAME --dataset_type TYPE --epoch_start 1
 ```
 The ```epoch_start``` flag lets you resume the training from the specified epoch. Additional flags (such as for training ablated models) can be located inside ```src/main.py```. If you already have a model pretrained on MEGA-DT, add the flag ```--finetune_megadt MODELNAME_EPOCH``` to use this model as the initial checkpoint.
 ### Evaluation
